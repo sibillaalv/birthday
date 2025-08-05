@@ -1,4 +1,4 @@
-@media (max-width:1000px) {
+@media (max-width:900px) {
 
     /* Здесь мы находимся внутри медиа-запроса для экранов с шириной не более 1000 пикселей. 
        Этот блок комментария может содержать описание стилей, которые будут применены 
@@ -40,10 +40,11 @@
   
     padding-bottom: 5%;
     color: white;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     justify-content: flex-start;
     gap: 15%;
+    
   }
   
   .section-about>p {
@@ -95,7 +96,7 @@
   
   .container-navbar {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: space-between;
     margin: 0 auto;
     gap: 70%;
