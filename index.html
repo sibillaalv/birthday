@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Определение кодировки документа и совместимости с IE -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Настройка масштабирования и отображения на мобильных устройствах -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Заголовок страницы -->
+  <title>Happy Birthday</title>
+  <!-- Подключение основных стилей и стилей для медиа-запросов -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./media.css">
+  <!-- Подключение шрифтов из Google Fonts -->
+  <!-- https://www.youtube.com/watch?v=gzGPdYnUTgI -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@500&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Основной контейнер страницы -->
+  <div class="main-container">
+    <!-- Navbar (панель навигации) -->
+    <div class="container-navbar">
+      <!-- Логотип и название сайта -->
+      <div class="navbar-logo">
+        <p>- Kazna Rulit </p>
+      </div>
+      <!-- Ссылки в навигационной панели -->
+      <div class="navbar-links">
+        <p><a href="https://vk.com/sibillaa"> VK </a></p>
+        <p><a href="https://t.me/ustalchutok"> Telegram </a></p>
+        <p><a href="https://www.instagram.com/sibillasde?igsh=MXZrcXBpazh5emhsYw%3D%3D&utm_source=qr"> Instagram </a></p>
+      </div>
+   
+    </div>
+
+    <!-- Главная секция страницы -->
+    <div class="first-container">
+      <div class="section-about">
+        <!-- Заголовок и описание раздела -->
+        <h1>Happy Birthday Shamil !</h1>
+        <p>special for Roman Sergeevich<br>from Ustal(ne)chutok</p>
+        <!-- Кнопка для отправки заявки --> 
+        <button id="scrollButton">tap here</button>
+      </div>
+    </div>
+    <!-- Завершение главной секции -->
+  </div>
+
+  <!-- Страница 1 с жирафом и тортиком -->
+  <div class="second-container">
+    <section id="page2" class="page">
+    <!-- Изображение и информация второго раздела -->
+    <div class="second-img">
+    <img src="../img/main.png" alt="ж">
+    </div>
+      <!-- Кнопка для песни-->
+    <!-- <section id="page2" class="page"> -->
+        <button id="playVideo1">увеличь громкость на телефоне <br> и нажми сюда (не далее) </button>
+        <video id="video1" src="../mp/song.mp4" controls></video>
+    </section>  
+
+    
+    <button id="scrollBu">теперь далее</button>
+  </div>
+  <!-- Завершение второго контейнера -->
+
+
+  <!-- Пожелания и кружочек -->
+  <div class="four-section">
+    <!-- Информационный блок второго раздела -->
+      <!-- Изображение и краткое содержание отзыва -->
+      <div class="four-section-img">
+        <p class="four-img-1">С днем рождения!<br> Искренне желаю тебе всех благ,<br> много радости и успехов во всех твоих начинаниях!<br> 
+          Пусть всё в твоей жизни всегда будет настоящим и искренним :) </p>
+      </div>
+    <div class="four-section-text">
+      <!-- Кнопка для просмотра -->
+      <section id="page3" class="page">
+        <button id="playVideo2">Ну и самое главное <br> (tap here) </button>
+        <video id="video2" src="../mp/wish.mp4" controls></video>
+      </section>
+    </div>
+      <button id="scrollBut">далее</button>
+  </div>
+  <!-- Завершение второго контейнера -->
+
+
+  <!-- Напоминание -->
+  <div class="third-section">
+    <!-- Текстовый блок третьего раздела -->
+    <div class="third-section-text">
+      <!-- Заголовок и описание -->
+      <h1>Без лишних слов</h1>
+    </div>
+    <section id="page4" class="page">
+      <button id="playVideo3">Last tap</button>
+      <video id="video3" src="../mp/last.mp4" controls></video>
+    </section>
+    <!-- Блок с полями ввода и кнопкой отправки заявки -->
+ 
+  </div>
+
+
+  <script>
+
+  document.getElementById('scrollButton').addEventListener('click', function () {
+    document.getElementById('page2').scrollIntoView({ behavior: 'smooth' });
+  });
+  document.getElementById('scrollBut').addEventListener('click', function () {
+    document.getElementById('page4').scrollIntoView({ behavior: 'smooth' });
+  });
+  document.getElementById('scrollBu').addEventListener('click', function () {
+    document.getElementById('page3').scrollIntoView({ behavior: 'smooth' });
+  });
+  
+
+    // Страница 2: запуск видео и переход на след. страницу
+    document.getElementById('playVideo1').onclick = () => {
+      document.getElementById('playVideo1').style.display = 'none';
+      const vid1 = document.getElementById('video1');
+      vid1.style.display = 'block';
+      vid1.play();
+      vid1.onended = () => goToPage(2); // переход на страницу 3 после конца видео
+    };
+
+    // Страница 3: запуск видео и переход на след. страницу
+    document.getElementById('playVideo2').onclick = () => {
+      document.getElementById('playVideo2').style.display = 'none';
+      const vid2 = document.getElementById('video2');
+      vid2.style.display = 'block';
+      vid2.play();
+      vid2.onended = () => goToPage(3); // переход на страницу 4
+    };
+
+    // Страница 4: последний видеофайл
+    document.getElementById('playVideo3').onclick = () => {
+      document.getElementById('playVideo3').style.display = 'none';
+      const vid3 = document.getElementById('video3');
+      vid3.style.display = 'block';
+      vid3.play();
+      // После конца финального видео ничего не делаем
+    };
+  </script>
+    
+  </script>
+
+</body>
+</html>
+
+
+ 

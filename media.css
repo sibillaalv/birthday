@@ -1,0 +1,431 @@
+@media (max-width:1000px) {
+
+    /* Здесь мы находимся внутри медиа-запроса для экранов с шириной не более 1000 пикселей. 
+       Этот блок комментария может содержать описание стилей, которые будут применены 
+       к элементам страницы, когда ширина экрана устройства не превышает 1000 пикселей. */
+  
+    /* Например: */
+    body {
+      font-size: 14px; /* Установка размера шрифта для устройств с шириной экрана до 1000 пикселей */
+    }
+  
+    /* Добавьте свои стили согласно вашим требованиям */
+  
+  
+  * {
+    /* font-family: 'Montserrat', sans-serif; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    letter-spacing: 3px;
+  
+    /* font-weight: 700; */
+    font-size: min(20px, 5vw);
+  }
+  
+  .main-container {
+    background-image: url(/img/mulan.jpg);
+    /* background-repeat: no-repeat; */
+    background-position: center; 
+    /* background-size: auto;  */
+    height: 500px;
+  
+    /* object-fit: cover;  */
+    /* object-position: bottom; */
+  
+    padding-bottom: 5%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15%;
+  }
+  
+  .section-about>p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: min(12px, 5vw);
+    /* font-weight: 400; */
+  
+    padding-top: 2%;
+    padding-bottom: 3%;
+  }
+  
+  button {
+    font-size: 0.8em;
+    padding: 1% 2% 1% 2%;
+  
+    color: #b1efff;
+    border: 2px solid #1c5967;
+    border-radius: 38px;
+  
+    font-weight: 600;
+  
+    background: none;
+  
+    
+  }
+  
+  /* при наведении результат */
+  button:hover {
+    font-size: 1em;
+  
+    padding: 1.5% 4% 1.5% 4%;
+  
+    color: #000000;
+    font-weight: 600;
+  
+    background: #4f7780;
+    border-radius: 38px;
+    border: 2px solid #c0ced2;
+  
+    cursor: pointer;
+  }
+  
+  A {
+    text-decoration: none;
+    color: white;
+  }
+  
+  
+  .container-navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 70%;
+  
+  }
+  
+  .navbar-logo {
+    color: beige;
+    font-weight: 900;
+    font-size: 18px;
+  }
+  .navbar-links {
+    gap: 10%;
+    color: #777272;
+  }
+  
+  
+  .first-container {
+    display: flex;
+    flex-flow: column;
+  }
+  
+  .section-about {
+    flex-flow: row wrap;
+    justify-content: space-around;
+  
+    padding-top: 13%;
+    padding-left: 5%;
+  }
+  .section-about>button{
+    font-size: 1em;
+  
+    padding: 5% 4% 5% 4%;
+  
+  }
+
+  .vector {
+    display: flex;
+  }
+  
+  
+  /* 2 блок */
+  .first-container {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  
+  .section-about {
+    flex-flow: row wrap;
+    justify-content: space-around;
+  
+    padding-top: 13%;
+    padding-left: 5%;
+  }
+  
+  .second-container {
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    gap: 30%;
+    justify-content: space-around;
+    padding: 5% 5% 5% 5%;
+    img {
+        width: 300px;
+        border-radius: 3%;
+    }
+
+    #scrollBu {
+        margin-top: 15%;
+    }
+  }
+  #video1 {
+    width: 80%;
+    max-height: 70%;
+    margin-top: 20px;
+    /* display: none; */
+  }
+  
+  
+  .second-img-1 {
+    padding-top: 5%;
+    padding-left: 7%;
+    font-family: 'Playfair Display';
+  
+    font-weight: 400;
+    font-size: min(30px, 5vw);
+  }
+  
+  .second-img-2 {
+    padding-top: 40%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    font-family: 'Montserrat', sans-serif;
+  
+    line-height: 25px;
+    font-weight: 400;
+    font-size: min(30px, 6vw);
+  }
+  
+  .second-inform {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    font-family: 'Playfair Display';
+  
+    padding-left: 5%;
+    padding-top: 5%;
+    /* padding-bottom: 5%; */
+    gap: 20px;
+  }
+  
+  .second-inform>button {
+  
+    font-size: 1em;
+    padding: 5% 4% 5% 4%;
+  
+    width: 100%;
+    height: 15%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; 
+    border-radius: 38px;
+  }
+  
+  /* 3 блок */
+  .third-section {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    flex-flow: column;
+    gap: 15px;
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(161, 163, 164);
+  }
+  
+  .third-section-text {
+    display: block;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: 'Playfair Display';
+  }
+  
+  .third-section-text>h1 {
+    font-weight: 800;
+    font-size: min(20px, 5vw);
+    font-family: 'Playfair Display';
+  }
+  
+  .third-section-text>p {
+    padding-top: 5%;
+    font-family: 'Montserrat', sans-serif;
+  line-height: 30px;
+  }
+  
+  .third-section-inputs {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  font-family: 'Montserrat', sans-serif;
+  padding-right: 10%;
+  margin-bottom: 10%;
+  }
+  
+  .third-section-inputs>input {
+  font-weight: 500;
+  font-size: 1em;
+  
+  padding: 5% 5% 5% 5%;
+  
+  color: #000000;
+  font-weight: 600;
+  
+  background: none;
+  border-radius: 38px;
+  border: 2px solid #9CB7CA;
+  
+  cursor: pointer;
+  }
+  
+  .inputs-confirm {
+    display: block;
+    color: #030000;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 5%;
+    text-align: center;
+  }
+  
+  .inputs-confirm>a{
+    color: #007792;
+  }
+  
+  .third-section-phone {
+    display: none;
+    color: #030000;
+  
+    padding-top: 5%;
+    text-align: center;
+  }
+  
+  .third-section-inputs>button {
+    font-size: 1em;
+  
+    padding: 5% 4% 5% 4%;
+  
+    color: #3CDCFF;
+    font-weight: 600;
+  
+    background: none;
+    border-radius: 38px;
+    border: 2px solid #3CDCFF;
+  
+    cursor: pointer;
+  }
+  
+  .third-section-inputs>button:hover {
+    font-size: 1em;
+  
+    padding: 5% 4% 5% 4%;
+  
+    color: #000000;
+    font-weight: 600;
+  
+    background: #3CDCFF;
+    border-radius: 38px;
+    cursor: pointer;
+  }
+  
+  /* 4 блок */
+  
+  #video2 {
+    width: 90%;
+    max-height: 80%;
+    margin-top: 20px;
+    display: none;
+  }
+  .four-section{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    background-color: rgb(15, 28, 23);
+  
+    padding: 5% 5% 5% 5%;
+  }
+  
+  .four-section-text{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+  
+    padding-left: 5%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    /* padding-top: 10%; */
+    gap: 20px;
+  }
+  
+  .four-section-img{
+    background: url(/img/42552.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: auto; */
+    width: 100%;  
+    /* padding-bottom: 20%; */
+    /* padding-left: ; */
+    color: rgb(7, 7, 7);
+    position: relative;
+    border-radius: 16px;
+    
+  }
+  #page3 {
+    padding-top: 3vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+  }
+  .four-img-1{
+    padding-top: 3%;
+    padding-left: 3%;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 30px;
+  
+    font-weight: 400;
+    font-size: min(30px, 4vw); 
+  }
+  
+  
+   .four-section-text>button{
+    padding:5% 4% 5% 4%;
+    font-weight: 600px;
+    font-size: 1em;
+   }
+
+   #playVideo1, #playVideo2, #playVideo3 {
+    font-size: 1em;
+    padding: 1.5% 4% 1.5% 4%;
+  
+    color: #b0f8dc;
+    border: 2px solid #33936d;
+    border-radius: 38px;
+  
+    font-weight: 600;
+    background: none;
+    cursor: pointer;
+
+  }
+
+  /* при наведении результат */
+  #playVideo1:hover, #playVideo2:hover, #playVideo3:hover {
+    font-size: 1em;
+  
+    padding: 1.5% 4% 1.5% 4%;
+  
+    color: #000000;
+    font-weight: 700;
+  
+    background: #4b8693;
+    border-radius: 38px;
+    border: 2px solid #184b56;
+    cursor: pointer;
+  }
+   
+ 
+}
+  
+  
