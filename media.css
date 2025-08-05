@@ -29,7 +29,7 @@
   }
   
   .main-container {
-    background-image: url(/img/mulan.jpg);
+    background-image: url(.//images/mulan.jpg);
     /* background-repeat: no-repeat; */
     background-position: center; 
     /* background-size: auto;  */
@@ -360,7 +360,7 @@
   }
   
   .four-section-img{
-    background: url(/img/42552.jpg);
+    background: url(images/42552.jpg);
     background-repeat: no-repeat;
     background-position: center;
     /* background-size: auto; */
