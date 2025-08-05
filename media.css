@@ -32,8 +32,8 @@
     background-image: url(images/mulan.jpg);
     /* background-repeat: no-repeat; */
     background-position: center; 
-    /* background-size: auto;  */
-    height: 500px;
+    background-size: cover;
+    height: 700px;
   
     /* object-fit: cover;  */
     /* object-position: bottom; */
@@ -44,7 +44,7 @@
     flex-direction: column;
     justify-content: flex-start;
     gap: 15%;
-    
+
   }
   
   .section-about>p {
@@ -232,6 +232,7 @@
     justify-content: center;
     align-items: center;
     background-color: rgb(161, 163, 164);
+    height: 600px;
   }
   
   .third-section-text {
@@ -342,6 +343,7 @@
     flex-flow: column;
     justify-content: space-around;
     background-color: rgb(15, 28, 23);
+    height: 800px;
   
     padding: 5% 5% 5% 5%;
   }
