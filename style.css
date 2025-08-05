@@ -14,7 +14,7 @@
   }
   
   .main-container {
-    background-image: url(../images/mul.jpg);
+    background-image: url(images/mul.jpg);
     background-color: rgb(24, 39, 34);
     background-repeat: no-repeat;
     background-position: center;
@@ -323,7 +323,8 @@
   
   .four-section-img{
     
-    background-image: url(../images/42552.jpg);
+    background-image: url(images/42552.jpg);
+
    
     color: rgb(20, 17, 17);
     border-radius: 16px;
